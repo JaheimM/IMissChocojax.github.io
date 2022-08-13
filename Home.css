@@ -1,0 +1,83 @@
+*,
+*::after,
+*::before {
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --primary-color: rgb(169, 124, 115);
+    --secondary-color: rgb(251, 251, 242);
+    --accent-color: rgb(51, 15, 10);
+} 
+
+body {
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
+    text-align: center;
+    height: 100vh;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+h1::first-letter {
+    color: var(--accent-color)
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+nav, ul {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#links li {
+   padding: 1em;
+}
+
+main { 
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+}
+
+footer p {
+    margin-top: 2em;
+}
+
+.live-or-notImage {
+ width: 50%;
+ cursor: pointer;
+ margin-bottom: 5px;
+  margin: 1.5em 0;
+}
+
+.stream-info {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--accent-color);
+    padding: 1.2em;
+    margin: 1em 0;
+    border-radius: 3%;
+    width: 50%;
+}
+
+.stream-info p {
+    
+}
+
